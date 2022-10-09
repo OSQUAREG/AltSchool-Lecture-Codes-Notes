@@ -1,21 +1,23 @@
 # DRY (Don't Repeat Yourself).
-# class Parrot:
-#     # class attribute
-#     species = "bird"
 
-#     # instance attribute 
-#     def __init__(self, name, age, color):
-#         self.name = name
-#         self.age = age
-#         self.color = color
+# # Example 1:
+class Parrot:
+    # class attribute
+    species = "bird"
 
-# blu = Parrot('Blu', 10, 'Blue')
-# woo = Parrot('Woo', 15, 'Red')
+    # instance attribute 
+    def __init__(self, name, age, color):
+        self.name = name
+        self.age = age
+        self.color = color
 
-# print("Blu is a {}".format(blu.__class__.species))
-# print("Woo is a {}".format(woo.__class__.species))
+blu = Parrot('Blu', 10, 'Blue')
+woo = Parrot('Woo', 15, 'Red')
 
-# print("{} is {} years old, and has a color of {}".format(blu.name, blu.age, blu.color))
+print("Blu is a {}".format(blu.__class__.species))
+print("Woo is a {}".format(woo.__class__.species))
+
+print("{} is {} years old, and has a color of {}".format(blu.name, blu.age, blu.color))
 
 # class Parrot:
 #     # instance attributes
@@ -68,15 +70,15 @@
 # peggy.swim()
 # peggy.run()
 
-class Computer:
-    def __init__(self):
-        self.__maxprice = 900
+# class Computer:
+#     def __init__(self):
+#         self.__maxprice = 900
 
-    def sell(self):
-        print("Selling Price: {}".format(self.__maxprice))
+#     def sell(self):
+#         print("Selling Price: {}".format(self.__maxprice))
 
-    def setMaxPrice(self, price):
-        self.__maxprice = price
+#     def setMaxPrice(self, price):
+#         self.__maxprice = price
 
 # c = Computer()
 # c.sell()
@@ -92,28 +94,28 @@ class Computer:
 # c.setMaxPrice(2000)
 # c.sell()
 
-class Parrot:
-    def fly(self):
-        print("Parrot can fly")
+# class Parrot:
+#     def fly(self):
+#         print("Parrot can fly")
     
-    def swim(self):
-        print("Parrot can't swim")
+#     def swim(self):
+#         print("Parrot can't swim")
 
-class Penguin:
-    def fly(self):
-        print("Penguin can't fly")
+# class Penguin:
+#     def fly(self):
+#         print("Penguin can't fly")
     
-    def swim(self):
-        print("Penguin can swim")
+#     def swim(self):
+#         print("Penguin can swim")
 
-# common interface
-def flying_test(bird):
-    bird.swim()
+# # common interface
+# def flying_test(bird):
+#     bird.swim()
 
-#instantiate objects
-blu = Parrot()
-peggy = Penguin()
+# #instantiate objects
+# blu = Parrot()
+# peggy = Penguin()
 
-# passing the object
-flying_test(blu)
-flying_test(peggy)
+# # passing the object
+# flying_test(blu)
+# flying_test(peggy)

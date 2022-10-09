@@ -1,4 +1,4 @@
-# Statements in Python
+# # Statements in Python
 # site = 'gfg'
 
 # integer = 1, 2, 3, 4, 5, 500
@@ -25,7 +25,6 @@
 # # var 1 =1
 
 # # VAR = 3.143
-
 
 
 # list1 = ["abc", 34, True, 40, "male", 0.5]
@@ -60,7 +59,7 @@ print('All set !')
 
 # print(bool(zero_int))
 
-#Boolean Arithmetic
+# Boolean Arithmetic
 # or
 # and
 # not
@@ -154,14 +153,14 @@ print('All set !')
 # list1 = set(list1)
 # print(type(list1))
 
-a = {2,4,6,8,10}
-b = {1,3,5,7,9,2,4}
+# a = {2, 4, 6, 8, 10}
+# b = {1, 3, 5, 7, 9, 2, 4}
 
 # c = a | b
 # print(c)
 
-c = a.union(b)
-print(c)
+# c = a.union(b)
+# print(c)
 
 # c = a & b
 # c = a.intersection(b)
