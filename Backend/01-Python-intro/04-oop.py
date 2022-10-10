@@ -1,43 +1,48 @@
 # DRY (Don't Repeat Yourself).
 
-# # Example 1:
-class Parrot:
-    # class attribute
-    species = "bird"
+# # Example 1: creating class attribute
+# class Parrot:
+#     # class attribute
+#     species = "bird"
 
-    # instance attribute 
-    def __init__(self, name, age, color):
-        self.name = name
-        self.age = age
-        self.color = color
+#     # instance attribute 
+#     def __init__(self, name, age, color):
+#         self.name = name
+#         self.age = age
+#         self.color = color
 
-blu = Parrot('Blu', 10, 'Blue')
-woo = Parrot('Woo', 15, 'Red')
+# blu = Parrot('Blu', 10, 'Blue')
+# woo = Parrot('Woo', 15, 'Red')
 
-print("Blu is a {}".format(blu.__class__.species))
-print("Woo is a {}".format(woo.__class__.species))
+# print("Blu is a {}".format(blu.__class__.species))
+# print("Woo is a {}".format(woo.__class__.species))
 
-print("{} is {} years old, and has a color of {}".format(blu.name, blu.age, blu.color))
+# print("{} is {} years old, and has a color of {}".format(blu.name, blu.age, blu.color))
 
+# # Example 2: creating class methods
 # class Parrot:
 #     # instance attributes
 #     def __init__(self, name, age):
 #         self.name = name
 #         self.age = age
+
 #     # instance method1
 #     def sing(self, song):
 #         return "{} sings {} and {} years old".format(self.name, song, self.age)
+
 #     # instance method2
 #     def dance(self):
-#         return "{} is now dancing".format(self.name)
+#         return "{} is now dancing".format(self.name)        
 
 # # instantiate the object
-# # blu = Parrot("Blu", 10)
+# blu = Parrot("Blu", 10)
 
 # # call our instance methods
-# # print(blu.sing("'Happy'"))
-# # print(blu.dance())
+# print(blu.sing("'Happy'"))
+# print(blu.dance())
 
+
+# # Example 3: INHERITANCE
 
 # # parent class
 # class Bird:
@@ -49,12 +54,12 @@ print("{} is {} years old, and has a color of {}".format(blu.name, blu.age, blu.
 
 #     def swim(self):
 #         print("Swim faster")
-
+    
 # # child class
 # class Penguin(Bird):
 
 #     def __init__(self):
-#         # call super() function
+#         # call super() function - tells python that you are initailizing from the parent with __init__
 #         super().__init__()
 #         print("Penguin is ready")
 
@@ -64,12 +69,14 @@ print("{} is {} years old, and has a color of {}".format(blu.name, blu.age, blu.
 #     def run(self):
 #         print("Run faster")
 
-
 # peggy = Penguin()
 # peggy.whoisThis()
 # peggy.swim()
 # peggy.run()
 
+
+# # Example 3: ENCAPSULATION
+# # this restrict access to directly change variables in a class
 # class Computer:
 #     def __init__(self):
 #         self.__maxprice = 900
@@ -83,16 +90,20 @@ print("{} is {} years old, and has a color of {}".format(blu.name, blu.age, blu.
 # c = Computer()
 # c.sell()
 
-# change the price 
+# # trying to change the price 
 # c.__maxprice = 1000
 # c.sell()
 
-# using the function setmaxprice
+# # using the function setmaxprice
 # c.setMaxPrice(1000)
 # c.sell()
 
 # c.setMaxPrice(2000)
 # c.sell()
+
+
+# # Example 4: POLYMORPHISM
+# # ability to use common interface/attribute multiple times
 
 # class Parrot:
 #     def fly(self):
@@ -110,12 +121,20 @@ print("{} is {} years old, and has a color of {}".format(blu.name, blu.age, blu.
 
 # # common interface
 # def flying_test(bird):
-#     bird.swim()
+#     bird.fly()
+#     print("Flying test complete")
 
-# #instantiate objects
+# def swimming_test(bird):
+#     bird.swim()
+#     print("Swimming test complete")
+
+# # instantiate objects
 # blu = Parrot()
 # peggy = Penguin()
 
 # # passing the object
 # flying_test(blu)
 # flying_test(peggy)
+
+# swimming_test(blu)
+# swimming_test(peggy)
