@@ -22,10 +22,7 @@ class User(db.Model):
     def __repr__(self):
         return f"User {self.username}"
 
-
-
-
-@app.route('/')
+@app.route('/') # this is called a Decorator
 def index():
     users = User.query.all()
 

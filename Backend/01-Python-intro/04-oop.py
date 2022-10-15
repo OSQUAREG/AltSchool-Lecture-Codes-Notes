@@ -1,11 +1,11 @@
 # DRY (Don't Repeat Yourself).
 
-# # Example 1: creating class attribute
+# # Example 1: creating CLASS ATTRIBUTE
 # class Parrot:
 #     # class attribute
 #     species = "bird"
 
-#     # instance attribute 
+#     # instance attribute
 #     def __init__(self, name, age, color):
 #         self.name = name
 #         self.age = age
@@ -18,8 +18,9 @@
 # print("Woo is a {}".format(woo.__class__.species))
 
 # print("{} is {} years old, and has a color of {}".format(blu.name, blu.age, blu.color))
+# print("{} is {} years old, and has a color of {}".format(woo.name, woo.age, woo.color))
 
-# # Example 2: creating class methods
+# # Example 2: creating CLASS METHODS
 # class Parrot:
 #     # instance attributes
 #     def __init__(self, name, age):
@@ -32,7 +33,7 @@
 
 #     # instance method2
 #     def dance(self):
-#         return "{} is now dancing".format(self.name)        
+#         return "{} is now dancing".format(self.name)
 
 # # instantiate the object
 # blu = Parrot("Blu", 10)
@@ -44,7 +45,7 @@
 
 # # Example 3: INHERITANCE
 
-# # parent class
+# parent class
 # class Bird:
 #     def __init__(self):
 #         print("Bird is ready")
@@ -54,8 +55,8 @@
 
 #     def swim(self):
 #         print("Swim faster")
-    
-# # child class
+
+# child class
 # class Penguin(Bird):
 
 #     def __init__(self):
@@ -69,10 +70,16 @@
 #     def run(self):
 #         print("Run faster")
 
+#     def beauty(self, name):
+#         self.name = name
+#         print("{} is a beautiful bird".format(self.name))
+
+
 # peggy = Penguin()
 # peggy.whoisThis()
 # peggy.swim()
 # peggy.run()
+# peggy.beauty("Peggy")
 
 
 # # Example 3: ENCAPSULATION
@@ -90,7 +97,7 @@
 # c = Computer()
 # c.sell()
 
-# # trying to change the price 
+# # trying to change the price
 # c.__maxprice = 1000
 # c.sell()
 
@@ -108,14 +115,14 @@
 # class Parrot:
 #     def fly(self):
 #         print("Parrot can fly")
-    
+
 #     def swim(self):
 #         print("Parrot can't swim")
 
 # class Penguin:
 #     def fly(self):
 #         print("Penguin can't fly")
-    
+
 #     def swim(self):
 #         print("Penguin can swim")
 
