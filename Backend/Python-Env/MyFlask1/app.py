@@ -2,23 +2,21 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/') # This is called a Decorator.
+# App Routing means mapping URLs to a specific function that will handle to logic of the URL
+
+@app.route('/') # This is called a Decorator. 
 def hello_world():
     return "Hello World"
 
-@app.route('/home')
-def home():
-    return "Yes, I am Home"
-
 @app.route('/about')
 def about():
-    return "This is about me...LOL"
+    return "This is the about page."
 
 @app.route('/<name>') # passing a dynamic code to the route
 def greetings(name):
     return f"Hello {name}! How are you doing?"
 
-@app.route('/post/<int:id>') # to specify the data type to pass to the route
+@app.route('/post/<int:id>') # passing a dynamic code to the route with specified data type.
 def post_id(id):
     return f"This post has an id of {id}"
 
