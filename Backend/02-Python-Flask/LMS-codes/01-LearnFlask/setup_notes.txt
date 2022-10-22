@@ -1,0 +1,43 @@
+How to set up Flask on Mac, as seen on https://phoenixnap.com/kb/install-flask
+
+All code should be run in the Terminal
+
+Create a folder for your project:  
+    mkdir LearnFlask
+
+Move into this project folder:  
+    cd LearnFlask
+
+Set up the environment within the project folder, preferably with the same name:
+    python3 -m venv learnflask
+
+Activate the environment:
+    . learnflask/bin/activate
+
+Then install Flask in the project:
+    pip install flask
+
+After creating the .py file and coding the project, set FLASK_APP environment variable to the file name:
+    export FLASK_APP=projectfilename.py
+
+Activate debug mode, but only for development. Debug mode must be deactivated in production. There are two ways to activate debug mode:
+1. Within the .py file in the editor (preferred):
+    app.run(debug=True)
+2. Within the terminal:
+    export FLASK_DEBUG=True
+
+Run flask:
+    flask run
+
+Copy the link created in the terminal and paste it in a browser to open the project on a local(development) server
+
+Press CTRL C to quit running the project on the server
+
+To deactivate Flask in the Terminal: 
+    deactivate
+
+Store the requirements in a text file, so that others can run the same code easily:
+    pip freeze > requirements.txt
+
+When installing a project gotten elsewhere, install its requirements before running Flask:
+    pip install -r requirements.txt
