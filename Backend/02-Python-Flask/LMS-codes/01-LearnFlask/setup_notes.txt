@@ -2,7 +2,7 @@ How to set up Flask on Mac, as seen on https://phoenixnap.com/kb/install-flask
 
 All code should be run in the Terminal
 
-Create a folder for your project:  
+-- Create a folder for your project:  
     mkdir LearnFlask
 
 Move into this project folder:  
