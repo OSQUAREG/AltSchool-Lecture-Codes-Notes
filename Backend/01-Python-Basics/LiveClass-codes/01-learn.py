@@ -19,13 +19,11 @@
 
 # # print("The Area of the Circle is: ", area_of_circle)  #  Printing the result
 
-
 # # var1 = 1
 # # var_1 = 1
 # # var 1 =1
 
 # # VAR = 3.143
-
 
 # list1 = ["abc", 34, True, 40, "male", 0.5]
 # print(list1)
@@ -36,14 +34,12 @@
 # list1.pop(3)
 # print(list1)
 
-
 # print(list1[0:5])
 
 # # List
 
 # fruits=['apples','oranges','bananas','mangoes','grapes','strawberry']
 # print(fruits[1])
-
 ''' 
 if site == 'gfg':
     print('Logging on to geeksforgeeks...')
@@ -76,7 +72,6 @@ print('All set !')
 # print(A != B)
 # print(A or (C and B))
 # print((A and B) or C)
-
 
 # Dictionaries
 # age_dict = {"Ada": 10, "Caleb": 12, "John": 12}
