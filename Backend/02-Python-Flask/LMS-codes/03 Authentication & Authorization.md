@@ -1,4 +1,4 @@
-##01 AUTHENTICATION & AUTHORIZATION##
+#01 AUTHENTICATION & AUTHORIZATION##
 
 **DEFINITIONS:**
 AUTHENTICATION: is the act of validating that users are whom they claim to be. This is the first step in any security process.
