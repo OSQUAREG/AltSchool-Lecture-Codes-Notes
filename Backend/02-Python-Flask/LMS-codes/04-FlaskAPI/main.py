@@ -1,3 +1,10 @@
+'''
+pip install apiflask  # this also installs the Flask packages.
+pip install python-dotenv  # to use the .env and .flaskenv files
+pip install sqlalchemy # for db creation
+use http://localhost:5000/docs to test the API
+'''
+
 from apiflask import APIFlask, abort
 from flask import jsonify
 from db import session, Task

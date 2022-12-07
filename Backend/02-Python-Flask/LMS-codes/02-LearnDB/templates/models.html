@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Database Demo</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        text-align: center;
-        background-color: #eee;
-        color: midnightblue;
-        font-size: 20px;
-      }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Database Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      text-align: center;
+      background-color: #eee;
+      color: midnightblue;
+      font-size: 20px;
+    }
+
+    .container {
+      width: 50%;
+      margin: auto;
+    }
+
+    .container input {
+      width: 100%;
+    }
+
+    .container select {
+      width: 100%;
+    }
+
+    .table_wrapper {
+      width: 100%;
+      margin: 0 auto;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    th {
+      width: 200px;
+      background-color: darkmagenta;
+      color: floralwhite;
+      padding: 10px;
+      border: 1px dotted midnightblue;
+    }
+
+    td {
+      padding: 8px;
+      border: 1px dotted midnightblue;
+    }
+
+    button {
+      background-color: midnightblue;
+      color: floralwhite;
+      padding: 5px 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: blue;
+      transition: 0.3s;
+    }
+
+    @media (max-width: 840px) {
       .container {
-        width: 50%;
-        margin: auto;
-      }
-      .container input {
         width: 100%;
+        padding: 1rem;
       }
-      .container select {
-        width: 100%;
-      }
-      .table_wrapper {
-        width: 100%;
-        margin: 0 auto;
-        overflow-x: auto;
-        white-space: nowrap;
-      }
-      th {
-        width: 200px;
-        background-color: darkmagenta;
-        color: floralwhite;
-        padding: 10px;
-        border: 1px dotted midnightblue;
-      }
-      td {
-        padding: 8px;
-        border: 1px dotted midnightblue;
-      }
-      button {
-        background-color: midnightblue;
-        color: floralwhite;
-        padding: 5px 20px;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: blue;
-        transition: 0.3s;
-      }
-      @media (max-width: 840px) {
-        .container {
-          width: 100%;
-          padding: 1rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Database Demo</h1>
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Database Demo</h1>
+
+  <center>
     <div class="container">
       <form action="{{url_for('create_user')}}" method="POST">
         <label for="username">Username</label>
@@ -115,6 +129,9 @@
           </tbody>
         </table>
       </div>
-    </div>
-  </body>
+  </center>
+
+  </div>
+</body>
+
 </html>

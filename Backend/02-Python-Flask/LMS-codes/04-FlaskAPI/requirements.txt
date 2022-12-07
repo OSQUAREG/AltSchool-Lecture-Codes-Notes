@@ -14,8 +14,11 @@ marshmallow==3.18.0
 packaging==21.3
 pycodestyle==2.9.1
 pyparsing==3.0.9
+pythin-dotenv==0.21.0
 six==1.16.0
 SQLAlchemy==1.4.41
+typing-extensions==4.4.0
 toml==0.10.2
 webargs==8.2.0
 Werkzeug==2.2.2
+zipp==3.8.1

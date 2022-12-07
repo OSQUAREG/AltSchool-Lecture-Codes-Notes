@@ -57,22 +57,22 @@
 #         print("Swim faster")
 
 # child class
-# class Penguin(Bird):
+class Penguin(Bird):
 
-#     def __init__(self):
-#         # call super() function - tells python that you are initailizing from the parent with __init__
-#         super().__init__()
-#         print("Penguin is ready")
+    def __init__(self):
+        # call super() function - tells python that you are initailizing from the parent with __init__
+        super().__init__()
+        print("Penguin is ready")
 
-#     def whoisThis(self):
-#         print("Penguin")
+    def whoisThis(self):
+        print("Penguin")
 
-#     def run(self):
-#         print("Run faster")
+    def run(self):
+        print("Run faster")
 
-#     def beauty(self, name):
-#         self.name = name
-#         print("{} is a beautiful bird".format(self.name))
+    def beauty(self, name):
+        self.name = name
+        print("{} is a beautiful bird".format(self.name))
 
 
 # peggy = Penguin()
